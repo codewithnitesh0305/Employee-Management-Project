@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png"></a>
+            <div class="nav-link" id="nav-link">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7003.767974143388!2d77.39676319144223!3d28.633238919443045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cefdcb9e85a73%3A0x3f54a68e0dffe75b!2z4Kas4Ka-4Ka54Kaw4Ka-4Kau4Kaq4KeB4KawLCDgpqjgpr7gpocg4Kas4Ka-4Ka44KeN4Kak4Ka_IOCmpuCngeCmqOCnjeCmpuCmvuCmueCnh-CmsOCmviwgR2hhemlhYmFkLCDgpongpqTgp43gpqTgprAg4Kaq4KeN4Kaw4Kam4KeH4Ka2!5e0!3m2!1sbn!2sin!4v1693150316054!5m2!1sbn!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="ri-home-line fa"></i>
+                    <span>
+                        <h5>XYZ Road , ABC Building</h5>
+                        <p>Ghaziabad, Uttra Pradesh (UP)</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="ri-phone-line fa"></i>
+                    <span>
+                        <h5> +91 1234567890</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="ri-mail-line fa"></i>
+                    <span>
+                        <h5>niteshkumar@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form onclick="sendEmail(); reset();">
+                    <input type="text" placeholder="Enter Your Name" id="name" required>
+                    <input type="email" placeholder="Enter Your Email" id="email" required>
+                    <input type="text" placeholder="Enter Your Subject" id="subject" required>
+                    <textarea rows="8" placeholder="Message" id="message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, blanditiis? Consequatur deleniti nobis
+            molestiae velit.<br> Praesentium qui eos maiores quod!
+        </p>
+        <div class="icon">
+            <i class="ri-facebook-line"></i>
+            <i class="ri-instagram-line"></i>
+            <i class="ri-linkedin-box-fill"></i>
+            <i class="ri-twitter-line"></i>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="script.js"></script>
+</body>
+</body>
+
+</html>
